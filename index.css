@@ -1,0 +1,116 @@
+
+
+body {
+background-color: #74a4c5;
+  background-image: url("Images/_ (66).jpeg");
+}
+
+
+
+
+
+
+
+
+
+
+.grid-container {
+    display: grid;
+    /* Defines 4 columns with equal width, automatically creating rows */
+    grid-template-columns: repeat(10, 2fr); 
+    gap: 20px; /* Adds space between the grid items */
+    justify-items: center; /* Centers circles horizontally within their grid cells */
+    align-items: center; /* Centers circles vertically within their grid cells */
+}
+
+.circle {
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set an equal height to ensure a square shape */
+    background-color: #ee547d; /* Add a background color */
+    opacity: 30%;
+    border-radius: 50%; /* This makes the square div a perfect circle */
+    /* Optional: Add a border for an "empty" circle effect */
+    /* border: 2px solid #2980b9; */
+}
+
+
+
+.circle2 {
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set an equal height to ensure a square shape */
+    background-color: #f6c76a; /* Add a background color */
+    border-radius: 50%; /* This makes the square div a perfect circle */
+    /* Optional: Add a border for an "empty" circle effect */
+    /* border: 2px solid #2980b9; */
+}
+
+
+
+.circle3 {
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set an equal height to ensure a square shape */
+    background-color: #a8d2dc; /* Add a background color */
+    border-radius: 50%; /* This makes the square div a perfect circle */
+    /* Optional: Add a border for an "empty" circle effect */
+    /* border: 2px solid #2980b9; */
+}
+
+.circle4 {
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set an equal height to ensure a square shape */
+    background-color: #fbb4c073; /* Add a background color */
+    border-radius: 50%; /* This makes the square div a perfect circle */
+    /* Optional: Add a border for an "empty" circle effect */
+    /* border: 2px solid #2980b9; */
+}
+
+.circle5 {
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set an equal height to ensure a square shape */
+    background-color: #fbb4c073; /* Add a background color */
+    border-radius: 50%; /* This makes the square div a perfect circle */
+    /* Optional: Add a border for an "empty" circle effect */
+    /* border: 2px solid #2980b9; */
+}
+
+.circle6 {
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set an equal height to ensure a square shape */
+    background-color: #86c35b73; /* Add a background color */
+    border-radius: 50%; /* This makes the square div a perfect circle */
+    /* Optional: Add a border for an "empty" circle effect */
+    /* border: 2px solid #2980b9; */
+}
+
+
+
+
+.circle, .circle2, .circle3, .circle4, circle6 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.revealed{
+    opacity:1;
+}
+
+.squish{
+    transform: scale(1.4,0.6);
+}
+
+@keyframes growPop {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.8);}
+    100% {transform: scale(1);}
+}
+
+.grow{
+    animation: growPop 0.4s ease;
+}
+
+
+
